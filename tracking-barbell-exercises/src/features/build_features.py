@@ -1,3 +1,4 @@
+import importlib
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -172,107 +173,155 @@ subset[["gyr_y","gyr_y_temp_mean_ws_5"	,"gyr_y_temp_std_ws_5"]].plot()
 # --------------------------------------------------------------
 df_freq = df_temporal.copy().reset_index()
 
+import importlib
+
+import FrequencyAbstraction
+importlib.reload(FrequencyAbstraction)
+
+from FrequencyAbstraction import FourierTransformation
+
+# Check preconditions
+print("Data length:", len(df_freq))
+print("NaNs in acc_y:", df_freq["acc_y"].isna().sum())
+
 FreqAbs = FourierTransformation()
 
-fs = int(1000/200)
-ws = int(1000/200)
+fs = int(1000/200)  # 5 Hz sampling rate
+ws = int(2800/200)  # safer window size for FFT
 
- 
-df_freq = FreqAbs.abstract_frequency(df_freq,["acc_y"],ws,fs)
+try:
+    df_freq = FreqAbs.abstract_frequency(df_freq, ["acc_y"], ws, fs)
+except Exception as e:
+    print("Error during frequency abstraction:", e)
 
-df_freq.columns
+print("Computed columns:", df_freq.columns)
+
 
 #Visualise results
 subset = df_freq[df_freq["set"]==15]
+subset["acc_y"].plot()
+subset["acc_y_max_freq"].plot()
+subset[
+    [
+        "acc_y_max_freq",
+        "acc_y_freq_weighted",
+        "acc_y_pse","acc_y_freq_1.429_Hz_ws_14",
+        "acc_y_freq_2.5_Hz_ws_14",
+    ]
+].plot()
 
 
-class FourierTransformation:
+subset = df_freq[df_freq["set"] == 17]
+subset[["acc_y", "acc_y_max_freq"]].plot()
+
+
+
+
+df_freq_list = []
+for s in  df_freq["set"].unique():
+    print(f"Applying fourier transform to set {s}")
+    subset = df_freq[df_freq["set"] == s].reset_index(drop=True).copy()
+    subset = FreqAbs.abstract_frequency(subset, predictors_column, ws, fs)
+    df_freq_list.append(subset)
     
-    def __init__(self):
-        self.temp_list = []
-        self.freqs = None
 
-    # Find the amplitudes of the different frequencies using a fast fourier transformation. Here,
-    # the sampling rate expresses
-    # the number of samples per second (i.e. Frequency is Hertz of the dataset).
-    
-    def find_fft_transformation(self, data):
-        # Create the transformation, this includes the amplitudes of both the real
-        # and imaginary part.
-        # print(data.shape)
-        transformation = np.fft.rfft(data, len(data))
-        # real
-        real_ampl = transformation.real
-        # max
-        max_freq = self.freqs[np.argmax(real_ampl[0:len(real_ampl)])]
-        # weigthed
-        freq_weigthed = float(np.sum(self.freqs * real_ampl)) / np.sum(real_ampl)
-
-        # pse
-
-        PSD = np.divide(np.square(real_ampl), float(len(real_ampl)))
-        PSD_pdf = np.divide(PSD, np.sum(PSD))
-
-        # Make sure there are no zeros.
-        if np.count_nonzero(PSD_pdf) == PSD_pdf.size:
-            pse = -np.sum(np.log(PSD_pdf) * PSD_pdf)
-        else:
-            pse = 0
-
-        real_ampl = np.insert(real_ampl, 0, max_freq)
-        real_ampl = np.insert(real_ampl, 0, freq_weigthed)
-        row = np.insert(real_ampl, 0, pse)
-
-        self.temp_list.append(row)
-
-        return 0
-
-    # Get frequencies over a certain window.
-    def abstract_frequency(self, data_table, columns, window_size, sampling_rate):
-        self.freqs = (sampling_rate * np.fft.rfftfreq(int(window_size))).round(3)
-
-        for col in columns:
-            collist = []
-            # prepare column names
-            collist.append(col + '_max_freq')
-            collist.append(col + '_freq_weighted')
-            collist.append(col + '_pse')
-            
-            collist = collist + [col + '_freq_' +
-                    str(freq) + '_Hz_ws_' + str(window_size) for freq in self.freqs]
-           
-            # rolling statistics to calculate frequencies, per window size. 
-            # Pandas Rolling method can only return one aggregation value. 
-            # Therefore values are not returned but stored in temp class variable 'temp_list'.
-
-            # note to self! Rolling window_size would be nicer and more logical! In older version windowsize is actually 41. (ws + 1)
-            data_table[col].rolling(
-                window_size + 1).apply(self.find_fft_transformation)
-
-            # Pad the missing rows with nans
-            frequencies = np.pad(np.array(self.temp_list), ((window_size, 0), (0, 0)),
-                        'constant', constant_values=np.nan)
-            # add new freq columns to frame
-            
-            data_table[collist] = pd.DataFrame(frequencies, index=data_table.index)
-
-            # reset temp-storage array
-            del self.temp_list[:]
-            
-
-        
-        return data_table
+df_freq =  pd.concat(df_freq_list).set_index("epoch (ms)", drop=True)  
 
 # --------------------------------------------------------------
 # Dealing with overlapping windows
 # --------------------------------------------------------------
+df_freq = df_freq.dropna()
+
+# remove adjcaent rows 
+df_freq =  df_freq.iloc[::2] 
+
 
 
 # --------------------------------------------------------------
 # Clustering
 # --------------------------------------------------------------
 
+from sklearn.cluster import KMeans
+# Make a copy of your DataFrame
+df_cluster = df_freq.copy()
+
+# Select columns for clustering
+cluster_columns = ["acc_x", "acc_y", "acc_z"]
+# X = df_cluster[cluster_columns]
+
+# Elbow method to find the optimal k
+k_values = range(2, 10)
+inertias = []
+
+for k in k_values:
+    subset = df_cluster[cluster_columns]
+    kmeans = KMeans(n_clusters=k, random_state=0, n_init=20)
+    cluster_labels = kmeans.fit_predict(subset)
+    inertias.append(kmeans.inertia_)
+
+# Plotting the elbow curve
+plt.figure(figsize=(10, 10))
+plt.plot(k_values, inertias, marker='o')
+plt.xlabel("k")
+plt.ylabel("Sum of squared distances (Inertia)")
+
+plt.grid(True)
+plt.show()
+# elbow at 5
+
+kmeans = KMeans(n_clusters=5, random_state=0, n_init=20)
+subset = df_cluster[cluster_columns]
+df_cluster["cluster"] = kmeans.fit_predict(subset)
+
+
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D  # Ensure 3D plotting is supported
+
+fig = plt.figure(figsize=(15, 15))
+ax = fig.add_subplot(projection="3d")
+
+for c in df_cluster["cluster"].unique():
+    subset = df_cluster[df_cluster["cluster"] == c]
+    ax.scatter(
+        subset["acc_x"],
+        subset["acc_y"],
+        subset["acc_z"],
+        label=c
+    )
+
+ax.set_xlabel("X-axis")
+ax.set_ylabel("Y-axis")
+ax.set_zlabel("Z-axis")
+plt.legend()
+plt.show()
+
+
+
+
+
+fig = plt.figure(figsize=(15, 15))
+ax = fig.add_subplot(projection="3d")
+
+for c in df_cluster["label"].unique():
+    subset = df_cluster[df_cluster["label"] == c]
+    ax.scatter(
+        subset["acc_x"],
+        subset["acc_y"],
+        subset["acc_z"],
+        label=c
+    )
+
+ax.set_xlabel("X-axis")
+ax.set_ylabel("Y-axis")
+ax.set_zlabel("Z-axis")
+plt.legend()
+plt.show()
+
 
 # --------------------------------------------------------------
 # Export dataset
 # --------------------------------------------------------------
+
+
+df_cluster.to_pickle("../../data/interim/03_data_features.pkl")

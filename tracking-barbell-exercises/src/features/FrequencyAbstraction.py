@@ -43,12 +43,29 @@ class FourierTransformation:
         # and compute the values.
         for i in range(window_size, len(data_table.index)):
             for col in cols:
-                real_ampl, imag_ampl = self.find_fft_transformation(
-                    data_table[col].iloc[
-                        i - window_size : min(i + 1, len(data_table.index))
-                    ],
-                    sampling_rate,
-                )
+                # real_ampl, imag_ampl = self.find_fft_transformation(
+                #     data_table[col].iloc[
+                #         i - window_size : min(i + 1, len(data_table.index))
+                #     ],
+                #     sampling_rate,
+                # )
+                signal_window = data_table[col].iloc[
+    i - window_size : min(i + 1, len(data_table.index))
+].values
+                signal_window = signal_window - np.mean(signal_window)
+                real_ampl, imag_ampl = self.find_fft_transformation(signal_window, sampling_rate)
+                
+                print("Window index:", i)
+                print("Signal window:", signal_window)
+                print("Real part of FFT:", real_ampl)
+                print("Freqs:", freqs)
+                print("Argmax index (excluding DC):", np.argmax(real_ampl[1:]) + 1)
+                print("Max freq (excluding DC):", freqs[1:][np.argmax(real_ampl[1:])])
+                print("-" * 50)
+
+                
+
+
                 # We only look at the real part in this implementation.
                 for j in range(0, len(freqs)):
                     data_table.loc[
