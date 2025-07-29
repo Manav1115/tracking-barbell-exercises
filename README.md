@@ -39,7 +39,7 @@ tracking-barbell-exercises
 │   ├── barbell_exercises.png
 │   └── graphs.png
 ├── models/                 
-├── notebooks/               
+├── notebooks/               # Jupyter notebooks for exploratory data analysis (EDA) 
 ├── references/             
 │   └── folder_structure.txt
 ├── reports/               
@@ -55,13 +55,13 @@ tracking-barbell-exercises
 │   ├── build_features.py    # Main script to create features from processed data. (Important)
 │   ├── count_repetitions.py # Logic for counting repetitions.
 │   ├── DataTransformation.py
-│   ├── FrequencyAbstraction.py
-│   └── TemporalAbstraction.py
+│   ├── FrequencyAbstraction.py  
+│   └── TemporalAbstraction.py  
 ├── models/              # Scripts for model training, evaluation, and prediction.
 │   ├── LearningAlgorithms.py # Implementations of various learning algorithms.
-│   ├── train_model.py       # Main script to train and save models. (Important)
-│   └── predict_model.py     # Script to make predictions using trained models.
-└── visualization/       # Scripts for creating visualizations.
+│   ├── train_model.py       # Main script to train and save models. 
+│   └── predict_model.py    
+└── visualization/      
 └── visualize.py         # Script to generate various plots for analysis and reporting.
 ```
 
