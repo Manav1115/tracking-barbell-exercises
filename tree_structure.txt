@@ -1,0 +1,502 @@
+Folder PATH listing for volume OS
+Volume serial number is 3411-CD7C
+C:.
+|   environment.yml
+|   README.md
+|   tracking-barbell-exercises.code-workspace
+|   tree_structure.txt
+|   
++---sklearn-env
+|   |   pyvenv.cfg
+|   |   
+|   +---Include
+|   +---Lib
+|   |   \---site-packages
+|   \---Scripts
+|           python.exe
+|           pythonw.exe
+|           
+\---tracking-barbell-exercises
+    |   .gitignore
+    |   environment.yml
+    |   README.md
+    |   requirements.txt
+    |   
+    +---data
+    |   +---external
+    |   |       .gitkeep
+    |   |       
+    |   +---interim
+    |   |       .gitkeep
+    |   |       01.processed.pkl
+    |   |       02_outliers_removed_chauvenet.pkl
+    |   |       03_data_features.pkl
+    |   |       
+    |   +---processed
+    |   |       .gitkeep
+    |   |       
+    |   \---raw
+    |       |   .gitkeep
+    |       |   
+    |       +---MetaMotion
+    |       |       A-bench-heavy2-rpe8_MetaWear_2019-01-11T16.10.08.270_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-bench-heavy2-rpe8_MetaWear_2019-01-11T16.10.08.270_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-bench-heavy2_MetaWear_2019-01-14T14.27.00.784_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-bench-heavy2_MetaWear_2019-01-14T14.27.00.784_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-bench-heavy3-rpe8_MetaWear_2019-01-11T16.14.45.178_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-bench-heavy3-rpe8_MetaWear_2019-01-11T16.14.45.178_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-bench-heavy_MetaWear_2019-01-14T14.22.49.165_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-bench-heavy_MetaWear_2019-01-14T14.22.49.165_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-dead-heavy_MetaWear_2019-01-15T20.35.27.174_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-dead-heavy_MetaWear_2019-01-15T20.35.27.174_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-dead-medium1-rpe6_MetaWear_2019-01-11T17.24.24.832_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-dead-medium1-rpe6_MetaWear_2019-01-11T17.24.24.832_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-dead-medium_MetaWear_2019-01-15T20.26.26.347_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-dead-medium_MetaWear_2019-01-15T20.26.26.347_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-dead-medium_MetaWear_2019-01-15T20.30.34.601_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-dead-medium_MetaWear_2019-01-15T20.30.34.601_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-ohp-heavy1-rpe8_MetaWear_2019-01-11T16.38.54.580_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-ohp-heavy1-rpe8_MetaWear_2019-01-11T16.38.54.580_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-ohp-heavy2-rpe7_MetaWear_2019-01-11T16.41.24.439_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-ohp-heavy2-rpe7_MetaWear_2019-01-11T16.41.24.439_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-ohp-heavy3-rpe7_MetaWear_2019-01-11T16.44.00.801_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-ohp-heavy3-rpe7_MetaWear_2019-01-11T16.44.00.801_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-ohp-heavy_MetaWear_2019-01-14T14.49.46.484_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-ohp-heavy_MetaWear_2019-01-14T14.49.46.484_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-ohp-heavy_MetaWear_2019-01-14T14.53.06.282_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-ohp-heavy_MetaWear_2019-01-14T14.53.06.282_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-ohp-heavy_MetaWear_2019-01-14T14.55.42.246_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-ohp-heavy_MetaWear_2019-01-14T14.55.42.246_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-ohp-medium1-rpe7_MetaWear_2019-01-11T16.53.53.376_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-ohp-medium1-rpe7_MetaWear_2019-01-11T16.53.53.376_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-ohp-medium2-rpe7_MetaWear_2019-01-11T16.57.30.113_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-ohp-medium2-rpe7_MetaWear_2019-01-11T16.57.30.113_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-ohp-medium3-rpe7_MetaWear_2019-01-11T17.00.49.801_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-ohp-medium3-rpe7_MetaWear_2019-01-11T17.00.49.801_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       A-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       A-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       A-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       A-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-squat-heavy_MetaWear_2019-01-15T20.04.08.637_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-squat-heavy_MetaWear_2019-01-15T20.04.08.637_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-squat-heavy_MetaWear_2019-01-15T20.09.06.903_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-squat-heavy_MetaWear_2019-01-15T20.09.06.903_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-squat-heavy_MetaWear_2019-01-15T20.14.03.633_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-squat-heavy_MetaWear_2019-01-15T20.14.03.633_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-squat-medium1-rpe7_MetaWear_2019-01-11T17.05.44.498_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-squat-medium1-rpe7_MetaWear_2019-01-11T17.05.44.498_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-squat-medium2-rpe8_MetaWear_2019-01-11T17.17.15.443_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-squat-medium2-rpe8_MetaWear_2019-01-11T17.17.15.443_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       A-squat-medium3-rpe7_MetaWear_2019-01-11T17.19.34.896_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       A-squat-medium3-rpe7_MetaWear_2019-01-11T17.19.34.896_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       B-bench-heavy1-rpe8_MetaWear_2019-01-11T16.08.04.758_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       B-bench-heavy1-rpe8_MetaWear_2019-01-11T16.08.04.758_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       B-bench-heavy2-rpe8_MetaWear_2019-01-11T16.12.04.794_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       B-bench-heavy2-rpe8_MetaWear_2019-01-11T16.12.04.794_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       B-ohp-heavy1-rpe8_MetaWear_2019-01-11T16.40.07.902_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       B-ohp-heavy1-rpe8_MetaWear_2019-01-11T16.40.07.902_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       B-ohp-heavy2-rpe7_MetaWear_2019-01-11T16.42.43.398_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       B-ohp-heavy2-rpe7_MetaWear_2019-01-11T16.42.43.398_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       B-ohp-heavy3-rpe8_MetaWear_2019-01-11T16.45.55.708_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       B-ohp-heavy3-rpe8_MetaWear_2019-01-11T16.45.55.708_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       B-ohp-medium1-rpe8_MetaWear_2019-01-11T16.48.54.290_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       B-ohp-medium1-rpe8_MetaWear_2019-01-11T16.48.54.290_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       B-ohp-medium2-rpe8_MetaWear_2019-01-11T16.55.53.154_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       B-ohp-medium2-rpe8_MetaWear_2019-01-11T16.55.53.154_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       B-ohp-medium3-rpe9_MetaWear_2019-01-11T16.59.28.181_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       B-ohp-medium3-rpe9_MetaWear_2019-01-11T16.59.28.181_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       B-squat-medium1-rpe9_MetaWear_2019-01-11T17.09.32.694_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       B-squat-medium1-rpe9_MetaWear_2019-01-11T17.09.32.694_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-bench-heavy1_MetaWear_2019-01-14T14.29.37.418_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-bench-heavy1_MetaWear_2019-01-14T14.29.37.418_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-bench-heavy2_MetaWear_2019-01-14T14.32.11.392_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-bench-heavy2_MetaWear_2019-01-14T14.32.11.392_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-bench-heavy_MetaWear_2019-01-14T14.51.27.130_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-bench-heavy_MetaWear_2019-01-14T14.51.27.130_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-dead-medium_MetaWear_2019-01-15T20.28.15.269_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-dead-medium_MetaWear_2019-01-15T20.28.15.269_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-dead-medium_MetaWear_2019-01-15T20.32.32.136_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-dead-medium_MetaWear_2019-01-15T20.32.32.136_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-dead-medium_MetaWear_2019-01-15T20.37.17.794_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-dead-medium_MetaWear_2019-01-15T20.37.17.794_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-ohp-heavy_MetaWear_2019-01-14T14.54.34.321_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-ohp-heavy_MetaWear_2019-01-14T14.54.34.321_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-ohp-heavy_MetaWear_2019-01-14T14.57.26.702_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-ohp-heavy_MetaWear_2019-01-14T14.57.26.702_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-row-heavy_MetaWear_2019-01-14T15.05.36.986_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-row-heavy_MetaWear_2019-01-14T15.05.36.986_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       C-row-heavy_MetaWear_2019-01-14T15.05.36.986_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-row-heavy_MetaWear_2019-01-14T15.05.36.986_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       C-row-heavy_MetaWear_2019-01-14T15.08.50.111_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-row-heavy_MetaWear_2019-01-14T15.08.50.111_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       C-row-heavy_MetaWear_2019-01-14T15.08.50.111_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-row-heavy_MetaWear_2019-01-14T15.08.50.111_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       C-row-medium_MetaWear_2019-01-14T15.01.39.689_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-row-medium_MetaWear_2019-01-14T15.01.39.689_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       C-row-medium_MetaWear_2019-01-14T15.01.39.689_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-row-medium_MetaWear_2019-01-14T15.01.39.689_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       C-squat-heavy_MetaWear_2019-01-15T20.06.31.280_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-squat-heavy_MetaWear_2019-01-15T20.06.31.280_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-squat-heavy_MetaWear_2019-01-15T20.11.55.634_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-squat-heavy_MetaWear_2019-01-15T20.11.55.634_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       C-squat-heavy_MetaWear_2019-01-15T20.17.27.856_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       C-squat-heavy_MetaWear_2019-01-15T20.17.27.856_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       D-bench-medium_MetaWear_2019-01-18T18.12.13.952_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       D-bench-medium_MetaWear_2019-01-18T18.12.13.952_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       D-bench-medium_MetaWear_2019-01-18T18.21.29.033_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       D-bench-medium_MetaWear_2019-01-18T18.21.29.033_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       D-bench-medium_MetaWear_2019-01-18T18.24.19.109_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       D-bench-medium_MetaWear_2019-01-18T18.24.19.109_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       D-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       D-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       D-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       D-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       D-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       D-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       D-squat-heavy_MetaWear_2019-01-18T18.03.51.096_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       D-squat-heavy_MetaWear_2019-01-18T18.03.51.096_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       D-squat-medium_MetaWear_2019-01-18T17.45.47.575_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       D-squat-medium_MetaWear_2019-01-18T17.45.47.575_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       D-squat-medium_MetaWear_2019-01-18T17.51.40.910_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       D-squat-medium_MetaWear_2019-01-18T17.51.40.910_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-bench-heavy2-rpe8_MetaWear_2019-01-11T16.10.08.270_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-bench-heavy2-rpe8_MetaWear_2019-01-11T16.10.08.270_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-bench-heavy2_MetaWear_2019-01-14T14.27.00.784_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-bench-heavy2_MetaWear_2019-01-14T14.27.00.784_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-bench-heavy3-rpe8_MetaWear_2019-01-11T16.14.45.178_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-bench-heavy3-rpe8_MetaWear_2019-01-11T16.14.45.178_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-bench-heavy_MetaWear_2019-01-14T14.22.49.165_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-bench-heavy_MetaWear_2019-01-14T14.22.49.165_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-bench-medium_MetaWear_2019-01-18T18.12.13.952_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-bench-medium_MetaWear_2019-01-18T18.12.13.952_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-bench-medium_MetaWear_2019-01-18T18.21.29.033_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-bench-medium_MetaWear_2019-01-18T18.21.29.033_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-bench-medium_MetaWear_2019-01-18T18.24.19.109_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-bench-medium_MetaWear_2019-01-18T18.24.19.109_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-dead-heavy_MetaWear_2019-01-15T20.35.27.174_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-dead-heavy_MetaWear_2019-01-15T20.35.27.174_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-dead-medium1-rpe6_MetaWear_2019-01-11T17.24.24.832_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-dead-medium1-rpe6_MetaWear_2019-01-11T17.24.24.832_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-dead-medium_MetaWear_2019-01-15T20.26.26.347_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-dead-medium_MetaWear_2019-01-15T20.26.26.347_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-dead-medium_MetaWear_2019-01-15T20.30.34.601_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-dead-medium_MetaWear_2019-01-15T20.30.34.601_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-ohp-heavy_MetaWear_2019-01-14T14.49.46.484_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-ohp-heavy_MetaWear_2019-01-14T14.49.46.484_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-ohp-heavy_MetaWear_2019-01-14T14.53.06.282_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-ohp-heavy_MetaWear_2019-01-14T14.53.06.282_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-ohp-heavy_MetaWear_2019-01-14T14.55.42.246_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-ohp-heavy_MetaWear_2019-01-14T14.55.42.246_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       E-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       E-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       E-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       E-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       E-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       E-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       E-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |       |       E-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-squat-heavy_MetaWear_2019-01-15T20.09.06.903_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-squat-heavy_MetaWear_2019-01-15T20.09.06.903_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       E-squat-heavy_MetaWear_2019-01-15T20.14.03.633_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |       |       E-squat-heavy_MetaWear_2019-01-15T20.14.03.633_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |       |       
+    |       \---__MACOSX
+    |           |   ._MetaMotion
+    |           |   
+    |           \---MetaMotion
+    |                   ._A-bench-heavy2-rpe8_MetaWear_2019-01-11T16.10.08.270_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-bench-heavy2-rpe8_MetaWear_2019-01-11T16.10.08.270_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-bench-heavy2_MetaWear_2019-01-14T14.27.00.784_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-bench-heavy2_MetaWear_2019-01-14T14.27.00.784_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-bench-heavy3-rpe8_MetaWear_2019-01-11T16.14.45.178_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-bench-heavy3-rpe8_MetaWear_2019-01-11T16.14.45.178_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-bench-heavy_MetaWear_2019-01-14T14.22.49.165_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-bench-heavy_MetaWear_2019-01-14T14.22.49.165_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-dead-heavy_MetaWear_2019-01-15T20.35.27.174_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-dead-heavy_MetaWear_2019-01-15T20.35.27.174_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-dead-medium1-rpe6_MetaWear_2019-01-11T17.24.24.832_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-dead-medium1-rpe6_MetaWear_2019-01-11T17.24.24.832_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-dead-medium_MetaWear_2019-01-15T20.26.26.347_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-dead-medium_MetaWear_2019-01-15T20.26.26.347_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-dead-medium_MetaWear_2019-01-15T20.30.34.601_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-dead-medium_MetaWear_2019-01-15T20.30.34.601_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-ohp-heavy1-rpe8_MetaWear_2019-01-11T16.38.54.580_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-ohp-heavy1-rpe8_MetaWear_2019-01-11T16.38.54.580_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-ohp-heavy2-rpe7_MetaWear_2019-01-11T16.41.24.439_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-ohp-heavy2-rpe7_MetaWear_2019-01-11T16.41.24.439_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-ohp-heavy3-rpe7_MetaWear_2019-01-11T16.44.00.801_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-ohp-heavy3-rpe7_MetaWear_2019-01-11T16.44.00.801_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-ohp-heavy_MetaWear_2019-01-14T14.49.46.484_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-ohp-heavy_MetaWear_2019-01-14T14.49.46.484_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-ohp-heavy_MetaWear_2019-01-14T14.53.06.282_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-ohp-heavy_MetaWear_2019-01-14T14.53.06.282_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-ohp-heavy_MetaWear_2019-01-14T14.55.42.246_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-ohp-heavy_MetaWear_2019-01-14T14.55.42.246_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-ohp-medium1-rpe7_MetaWear_2019-01-11T16.53.53.376_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-ohp-medium1-rpe7_MetaWear_2019-01-11T16.53.53.376_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-ohp-medium2-rpe7_MetaWear_2019-01-11T16.57.30.113_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-ohp-medium2-rpe7_MetaWear_2019-01-11T16.57.30.113_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-ohp-medium3-rpe7_MetaWear_2019-01-11T17.00.49.801_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-ohp-medium3-rpe7_MetaWear_2019-01-11T17.00.49.801_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._A-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._A-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._A-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._A-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-squat-heavy_MetaWear_2019-01-15T20.04.08.637_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-squat-heavy_MetaWear_2019-01-15T20.04.08.637_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-squat-heavy_MetaWear_2019-01-15T20.09.06.903_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-squat-heavy_MetaWear_2019-01-15T20.09.06.903_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-squat-heavy_MetaWear_2019-01-15T20.14.03.633_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-squat-heavy_MetaWear_2019-01-15T20.14.03.633_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-squat-medium1-rpe7_MetaWear_2019-01-11T17.05.44.498_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-squat-medium1-rpe7_MetaWear_2019-01-11T17.05.44.498_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-squat-medium2-rpe8_MetaWear_2019-01-11T17.17.15.443_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-squat-medium2-rpe8_MetaWear_2019-01-11T17.17.15.443_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._A-squat-medium3-rpe7_MetaWear_2019-01-11T17.19.34.896_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._A-squat-medium3-rpe7_MetaWear_2019-01-11T17.19.34.896_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._B-bench-heavy1-rpe8_MetaWear_2019-01-11T16.08.04.758_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._B-bench-heavy1-rpe8_MetaWear_2019-01-11T16.08.04.758_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._B-bench-heavy2-rpe8_MetaWear_2019-01-11T16.12.04.794_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._B-bench-heavy2-rpe8_MetaWear_2019-01-11T16.12.04.794_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._B-ohp-heavy1-rpe8_MetaWear_2019-01-11T16.40.07.902_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._B-ohp-heavy1-rpe8_MetaWear_2019-01-11T16.40.07.902_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._B-ohp-heavy2-rpe7_MetaWear_2019-01-11T16.42.43.398_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._B-ohp-heavy2-rpe7_MetaWear_2019-01-11T16.42.43.398_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._B-ohp-heavy3-rpe8_MetaWear_2019-01-11T16.45.55.708_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._B-ohp-heavy3-rpe8_MetaWear_2019-01-11T16.45.55.708_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._B-ohp-medium1-rpe8_MetaWear_2019-01-11T16.48.54.290_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._B-ohp-medium1-rpe8_MetaWear_2019-01-11T16.48.54.290_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._B-ohp-medium2-rpe8_MetaWear_2019-01-11T16.55.53.154_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._B-ohp-medium2-rpe8_MetaWear_2019-01-11T16.55.53.154_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._B-ohp-medium3-rpe9_MetaWear_2019-01-11T16.59.28.181_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._B-ohp-medium3-rpe9_MetaWear_2019-01-11T16.59.28.181_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._B-squat-medium1-rpe9_MetaWear_2019-01-11T17.09.32.694_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._B-squat-medium1-rpe9_MetaWear_2019-01-11T17.09.32.694_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-bench-heavy1_MetaWear_2019-01-14T14.29.37.418_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-bench-heavy1_MetaWear_2019-01-14T14.29.37.418_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-bench-heavy2_MetaWear_2019-01-14T14.32.11.392_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-bench-heavy2_MetaWear_2019-01-14T14.32.11.392_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-bench-heavy_MetaWear_2019-01-14T14.51.27.130_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-bench-heavy_MetaWear_2019-01-14T14.51.27.130_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-dead-medium_MetaWear_2019-01-15T20.28.15.269_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-dead-medium_MetaWear_2019-01-15T20.28.15.269_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-dead-medium_MetaWear_2019-01-15T20.32.32.136_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-dead-medium_MetaWear_2019-01-15T20.32.32.136_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-dead-medium_MetaWear_2019-01-15T20.37.17.794_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-dead-medium_MetaWear_2019-01-15T20.37.17.794_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-ohp-heavy_MetaWear_2019-01-14T14.54.34.321_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-ohp-heavy_MetaWear_2019-01-14T14.54.34.321_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-ohp-heavy_MetaWear_2019-01-14T14.57.26.702_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-ohp-heavy_MetaWear_2019-01-14T14.57.26.702_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-row-heavy_MetaWear_2019-01-14T15.05.36.986_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-row-heavy_MetaWear_2019-01-14T15.05.36.986_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._C-row-heavy_MetaWear_2019-01-14T15.05.36.986_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-row-heavy_MetaWear_2019-01-14T15.05.36.986_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._C-row-heavy_MetaWear_2019-01-14T15.08.50.111_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-row-heavy_MetaWear_2019-01-14T15.08.50.111_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._C-row-heavy_MetaWear_2019-01-14T15.08.50.111_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-row-heavy_MetaWear_2019-01-14T15.08.50.111_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._C-row-medium_MetaWear_2019-01-14T15.01.39.689_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-row-medium_MetaWear_2019-01-14T15.01.39.689_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._C-row-medium_MetaWear_2019-01-14T15.01.39.689_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-row-medium_MetaWear_2019-01-14T15.01.39.689_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._C-squat-heavy_MetaWear_2019-01-15T20.06.31.280_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-squat-heavy_MetaWear_2019-01-15T20.06.31.280_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-squat-heavy_MetaWear_2019-01-15T20.11.55.634_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-squat-heavy_MetaWear_2019-01-15T20.11.55.634_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._C-squat-heavy_MetaWear_2019-01-15T20.17.27.856_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._C-squat-heavy_MetaWear_2019-01-15T20.17.27.856_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._D-bench-medium_MetaWear_2019-01-18T18.12.13.952_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._D-bench-medium_MetaWear_2019-01-18T18.12.13.952_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._D-bench-medium_MetaWear_2019-01-18T18.21.29.033_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._D-bench-medium_MetaWear_2019-01-18T18.21.29.033_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._D-bench-medium_MetaWear_2019-01-18T18.24.19.109_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._D-bench-medium_MetaWear_2019-01-18T18.24.19.109_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._D-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._D-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._D-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._D-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._D-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._D-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._D-squat-heavy_MetaWear_2019-01-18T18.03.51.096_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._D-squat-heavy_MetaWear_2019-01-18T18.03.51.096_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._D-squat-medium_MetaWear_2019-01-18T17.45.47.575_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._D-squat-medium_MetaWear_2019-01-18T17.45.47.575_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._D-squat-medium_MetaWear_2019-01-18T17.51.40.910_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._D-squat-medium_MetaWear_2019-01-18T17.51.40.910_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-bench-heavy2-rpe8_MetaWear_2019-01-11T16.10.08.270_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-bench-heavy2-rpe8_MetaWear_2019-01-11T16.10.08.270_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-bench-heavy2_MetaWear_2019-01-14T14.27.00.784_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-bench-heavy2_MetaWear_2019-01-14T14.27.00.784_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-bench-heavy3-rpe8_MetaWear_2019-01-11T16.14.45.178_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-bench-heavy3-rpe8_MetaWear_2019-01-11T16.14.45.178_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-bench-heavy_MetaWear_2019-01-14T14.22.49.165_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-bench-heavy_MetaWear_2019-01-14T14.22.49.165_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-bench-medium_MetaWear_2019-01-18T18.12.13.952_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-bench-medium_MetaWear_2019-01-18T18.12.13.952_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-bench-medium_MetaWear_2019-01-18T18.21.29.033_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-bench-medium_MetaWear_2019-01-18T18.21.29.033_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-bench-medium_MetaWear_2019-01-18T18.24.19.109_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-bench-medium_MetaWear_2019-01-18T18.24.19.109_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-dead-heavy_MetaWear_2019-01-15T20.35.27.174_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-dead-heavy_MetaWear_2019-01-15T20.35.27.174_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-dead-medium1-rpe6_MetaWear_2019-01-11T17.24.24.832_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-dead-medium1-rpe6_MetaWear_2019-01-11T17.24.24.832_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-dead-medium_MetaWear_2019-01-15T20.26.26.347_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-dead-medium_MetaWear_2019-01-15T20.26.26.347_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-dead-medium_MetaWear_2019-01-15T20.30.34.601_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-dead-medium_MetaWear_2019-01-15T20.30.34.601_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-ohp-heavy_MetaWear_2019-01-14T14.49.46.484_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-ohp-heavy_MetaWear_2019-01-14T14.49.46.484_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-ohp-heavy_MetaWear_2019-01-14T14.53.06.282_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-ohp-heavy_MetaWear_2019-01-14T14.53.06.282_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-ohp-heavy_MetaWear_2019-01-14T14.55.42.246_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-ohp-heavy_MetaWear_2019-01-14T14.55.42.246_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._E-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-rest-sitting_MetaWear_2019-01-18T18.22.25.565_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._E-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._E-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-rest-standing_MetaWear_2019-01-18T18.25.39.382_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._E-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._E-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-row-heavy_MetaWear_2019-01-14T15.04.06.123_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._E-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._E-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-row-heavy_MetaWear_2019-01-14T15.06.50.281_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.30.48.777_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.33.07.895_C42732BE255C_Gyroscope_25.000Hz_1.4.41.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Accelerometer_12.500Hz_1.4.41.csv
+    |                   ._E-row-medium_MetaWear_2019-01-18T18.34.52.516_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-squat-heavy_MetaWear_2019-01-15T20.09.06.903_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-squat-heavy_MetaWear_2019-01-15T20.09.06.903_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   ._E-squat-heavy_MetaWear_2019-01-15T20.14.03.633_C42732BE255C_Accelerometer_12.500Hz_1.4.4.csv
+    |                   ._E-squat-heavy_MetaWear_2019-01-15T20.14.03.633_C42732BE255C_Gyroscope_25.000Hz_1.4.4.csv
+    |                   
+    +---docs
+    |       .gitkeep
+    |       barbell_exercises.png
+    |       graphs.png
+    |       
+    +---models
+    |       .gitkeep
+    |       
+    +---notebooks
+    |       .gitkeep
+    |       
+    +---references
+    |       folder_structure.txt
+    |       
+    +---reports
+    |   \---figures
+    |           .gitkeep
+    |           Bench (A).png
+    |           Bench (B).png
+    |           Bench (C).png
+    |           Bench (D).png
+    |           Bench (E).png
+    |           Dead (A).png
+    |           Dead (C).png
+    |           Dead (E).png
+    |           Ohp (A).png
+    |           Ohp (B).png
+    |           Ohp (C).png
+    |           Ohp (E).png
+    |           Rest (A).png
+    |           Rest (E).png
+    |           Row (A).png
+    |           Row (C).png
+    |           Row (D).png
+    |           Row (E).png
+    |           Squat (A).png
+    |           Squat (B).png
+    |           Squat (C).png
+    |           Squat (D).png
+    |           Squat (E).png
+    |           
+    \---src
+        |   __init__.py
+        |   
+        +---data
+        |       .gitkeep
+        |       make_dataset.py
+        |       remove_outliers.py
+        |       __init__.py
+        |       
+        +---features
+        |   |   .gitkeep
+        |   |   build_features.py
+        |   |   count_repetitions.py
+        |   |   DataTransformation.py
+        |   |   FrequencyAbstraction.py
+        |   |   tempCodeRunnerFile.py
+        |   |   TemporalAbstraction.py
+        |   |   __init__.py
+        |   |   
+        |   \---__pycache__
+        |           DataTransformation.cpython-38.pyc
+        |           FrequencyAbstraction.cpython-38.pyc
+        |           TemporalAbstraction.cpython-38.pyc
+        |           
+        +---models
+        |   |   .gitkeep
+        |   |   LearningAlgorithms.py
+        |   |   predict_model.py
+        |   |   train_model.py
+        |   |   __init__.py
+        |   |   
+        |   \---__pycache__
+        |           LearningAlgorithms.cpython-38.pyc
+        |           
+        \---visualization
+                .gitkeep
+                plot_settings.py
+                visualize.py
+                __init__.py
+                
