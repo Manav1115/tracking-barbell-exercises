@@ -1,11 +1,11 @@
 # Tracking Barbell Exercises
-*Mini Master Project | Dave Ebbelaar | Vrije Universiteit Amsterdam*
+
 
 This repository provides all the code to process, visualize, and classify accelerometer and gyroscope data obtained from [Mbientlab's WristBand Sensor Research Kit](https://mbientlab.com/). The data was collected during gym workouts where participants were performing various barbell exercises.
 
 #### Exercises
-![Barbell exercise examples]([PythonCode/images/barbell_exercises.png](https://github.com/Manav1115/tracking-barbell-exercises/blob/main/tracking-barbell-exercises/docs/barbell_exercises.png))
-![Barbell exercise graphs]([PythonCode/images/graphs.png](https://github.com/Manav1115/tracking-barbell-exercises/blob/main/tracking-barbell-exercises/docs/graphs.png))
+![Barbell exercise examples](PythonCode/images/barbell_exercises.png]
+![Barbell exercise graphs](PythonCode/images/graphs.png]
 
 #### Goals
 * Classify barbell exercises
