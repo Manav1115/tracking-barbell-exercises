@@ -226,6 +226,7 @@ for col in outliers_columns:
 # --------------------------------------------------------------
 # Check outliers grouped by label
 # --------------------------------------------------------------
+# label = "squat"
 label = "dead"
 #14 outliers for gyr_z using chauvenet
 

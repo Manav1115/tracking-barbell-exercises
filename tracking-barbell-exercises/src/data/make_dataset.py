@@ -15,7 +15,7 @@ single_file_gyr = pd.read_csv("../../data/raw/MetaMotion/A-bench-heavy2-rpe8_Met
 # List all data in data/raw/MetaMotion
 # --------------------------------------------------------------
 
-files = glob("../../data/raw/MetaMotion/*.csv")
+files= glob("../../data/raw/MetaMotion/*.csv")
 
 len(files)
 # --------------------------------------------------------------
@@ -62,8 +62,9 @@ for f in files:
 
      category = f.split("-")[2].rstrip("123").rstrip("_MetaWear_2019")
      
-     
-
+    #  print(label)  
+    #  print(category)
+ 
      df = pd.read_csv(f)
 
 
@@ -148,8 +149,8 @@ def read_from_files(files):
             gyr_set += 1
             gyr_df = pd.concat([gyr_df,df])
         
-        acc_df.index= pd.to_datetime(acc_df["epoch (ms)"], unit="ms")
-        gyr_df.index = pd.to_datetime(gyr_df["epoch (ms)"], unit="ms")
+    acc_df.index= pd.to_datetime(acc_df["epoch (ms)"], unit="ms")
+    gyr_df.index = pd.to_datetime(gyr_df["epoch (ms)"], unit="ms")
 
 
     del acc_df["epoch (ms)"]
@@ -197,8 +198,8 @@ data_merged.head(50)
 # --------------------------------------------------------------
 # Resample data (frequency conversion)
 # --------------------------------------------------------------
-# Accelerometer:    12.500HZ
-# Gyroscope:        25.000Hz
+# Accelerometer:    12.500HZ    1/25
+# Gyroscope:        25.000Hz    1/12.5
 
 
 sampling=  {
@@ -214,6 +215,7 @@ sampling=  {
     "set":"last",
 }
 
+# data_merged[:1000].resample(rule="S").mean()
 # data_merged[:1000].resample(rule="200ms").mean()
 
 
